@@ -1,0 +1,156 @@
+
+mkdir aec
+cd aec
+
+ii) To initialize git repository
+git init
+
+iii) Create a new file called “hello.txt”
+touch hello.txt
+
+iv) Add the file to the staging area
+git add .
+
+v) Committing the file
+git commit -m “initial commit: adds a hello file”
+--------------------------------------------------------------------------------------------------------------------
+2) Creating and Managing Branches
+a)
+i)
+mkdir aec
+cd aec
+
+ii) To initialize git repository
+git init
+
+iii) Create a new file called “hello.txt”
+touch hello.txt
+
+iv) Add the file to the staging area
+git add .
+
+v) Committing the file
+git commit -m “adds a hello file”
+
+vii) Create and switch to the feature-branch
+git checkout -b feature-branch
+
+viii) Create a new file called “hello2.txt”
+touch hello2.txt
+
+ix) Add the file to the staging area
+git add .
+
+x) Committing the file
+git commit -m “adds a hello2 file”
+
+xi) Create and switch to the feature-branch
+git checkout main
+
+xii) Merge the branch to the main branch
+git merge feature-branch
+git log - to see the progress
+
+b)
+xiii) Create a new file
+touch hello3.txt
+
+ivx) Add the changes
+git add .
+
+xv) Stash the changes
+git stash
+
+xvi) Checkout the feature branch
+git stash pop
+--------------------------------------------------------------------------------------------------------------------------
+3)
+a) 
+git clone https://github.com/dev-shetty/aec-github.git
+cd aec-github
+
+b) 
+git fetch
+git checkout -b feature-branch
+git rebase origin/master
+
+c) 
+touch hello.txt
+git add .
+git commit -m “adds hello file”
+git checkout master
+git rebase feature-branch
+
+--------------------------------------------------------------------------------------------------------------------------------------
+4) 
+i) 
+mkdir aec
+cd aec
+ii) To initialize git repository
+git init
+
+iii) Create a new file called “hello.txt”
+touch hello.txt
+
+vi) Add the file to the staging area
+git add .
+
+v) Committing the file
+git commit -m “adds a hello file”
+
+vi) Tag the commit
+git tag v1.0
+----------------------------------------------------------------------------------------------------------------------------------------------
+5)
+i) Create a new folder called “aec” and switch into the folder
+mkdir aec
+cd aec
+
+ii) To initialize git repository
+git init
+
+iii) Create a new file called “hello.txt”
+touch hello.txt
+
+iv) Add the file to the staging area
+git add .
+
+v) Committing the file
+git commit -m “adds a hello file”
+
+vi) Copy the commit hash from the git log
+git log
+
+vi) Cherry pick the commit
+git cherry-pick commit-hash
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+6) Analysing and Changing Git History
+
+i) Create a new folder called “aec” and switch into the folder
+mkdir aec
+cd aec
+
+ii) To initialize git repository
+git init
+
+iii) Create a new file called “hello.txt”
+touch hello.txt
+
+iv) Add the file to the staging area
+git add .
+
+v) Committing the file
+git commit -m “adds a hello file”
+
+vi) Copy any of the commit hash by doing
+git log
+a)
+git show commit-hash
+b) 
+git log --author="JohnDoe" --since="2023-01-01" --until="2023-12-31"
+c) 
+git log -n 5
+
+d)  
+git revert commit-hash
